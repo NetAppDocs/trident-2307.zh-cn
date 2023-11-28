@@ -4040,4 +4040,5 @@ Astra Trident</block>
   <block id="ab09b43d2faaea1b49257d5a973eae0e" category="sidebar">管理和监控Asta Trandent</block>
   <block id="71f5771dab663d80ba4dad1627e3386a" category="sidebar">升级概述</block>
   <block id="5ff3faebb0ff710340bdbee89a4667ad" category="sidebar">使用操作员升级</block>
+  <block id="0cd8d0588cd2b20face3a0379d38f777" category="admonition">使用动态导出策略时、请勿使用网络地址转换(Network Address Translation、NAT)。使用NAT时、存储控制器会看到前端NAT地址、而不是实际IP主机地址、因此、如果在导出规则中找不到匹配项、则会拒绝访问。</block>
 </blocks>
