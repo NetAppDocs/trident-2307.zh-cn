@@ -29,10 +29,3 @@ summary: 您可以使用版本选择器在最新版本和以前的四个版本�
 * https://docs.netapp.com/us-en/trident-2110/index.html["Asta三打21.10."^]
 * https://docs.netapp.com/us-en/trident-2107/index.html["Astra Trident 21.07"^]
 
-
-21.07之前的版本、重定向到旧版文档站点。
-
-* https://netapp-trident.readthedocs.io/en/stable-v21.04/["Asta三排版21.04"^]
-* https://netapp-trident.readthedocs.io/en/stable-v21.01/["Asta三排版21.01"^]
-* https://netapp-trident.readthedocs.io/en/stable-v20.11/["Asta三端到端20.10"^]
-
