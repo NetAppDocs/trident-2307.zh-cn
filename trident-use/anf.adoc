@@ -16,6 +16,7 @@ summary: 您可以将Azure NetApp Files配置为Astra三端。您可以使用Azu
 
 
 
+[[azure-netapp-files-driver-details]]
 == Azure NetApp Files驱动程序详细信息
 
 Asta三端磁盘提供了以下Azure NetApp Files存储驱动程序、用于与集群进行通信。支持的访问模式包括：_ReadWriteOnce_(RWO)、_ReadOnlyMany_(ROX)、_ReadWriteMany_(rwx)、_ReadWriteOncePod_(RWOP)。
@@ -38,6 +39,7 @@ Rwo、ROX、rwx、RWOP
 |===
 
 
+[[considerations]]
 == 注意事项
 
 * Azure NetApp Files 服务不支持小于100 GB的卷。如果请求的卷较小，则 Astra Trident 会自动创建 100 GB 的卷。

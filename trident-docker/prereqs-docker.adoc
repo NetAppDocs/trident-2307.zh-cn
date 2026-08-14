@@ -16,6 +16,7 @@ summary: 在部署 Astra Trident 之前，您必须在主机上安装和配置�
 
 
 
+[[verify-the-requirements]]
 == 验证要求
 
 * 验证您的部署是否满足所有要求 link:../trident-get-started/requirements.html["要求"]。

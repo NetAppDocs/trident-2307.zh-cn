@@ -16,6 +16,7 @@ Kubernetes集群中的所有工作节点都必须能够挂载为Pod配置的卷�
 
 
 
+[[selecting-the-right-tools]]
 == 选择合适的工具
 
 如果要组合使用驱动程序、则应安装NFS和iSCSI工具。
@@ -31,6 +32,7 @@ NOTE: 默认情况下、最新版本的RedHat CoreOS会安装NFS和iSCSI。
 
 
 
+[[node-service-discovery]]
 == 节点服务发现
 
 Astra Trident会尝试自动检测节点是否可以运行iSCSI或NFS服务。
@@ -54,6 +56,7 @@ tridentctl get node -o wide -n <Trident namespace>
 ----
 
 
+[[nfs-volumes]]
 == NFS卷
 
 使用适用于您的操作系统的命令安装NFS工具。确保NFS服务已在启动期间启动。
@@ -80,12 +83,14 @@ WARNING: 安装NFS工具后重新启动工作节点、以防止在将卷连接�
 
 
 
+[[iscsi-volumes]]
 == iSCSI 卷
 
 Astra Trident可以自动建立iSCSI会话、扫描LUN、发现多路径设备、对其进行格式化并将其挂载到Pod。
 
 
 
+[[iscsi-self-healing-capabilities]]
 === iSCSI自我修复功能
 
 对于ONTAP 系统、Astra Trident每五分钟运行一次iSCSI自我修复、以便：
@@ -111,6 +116,7 @@ NOTE: 例如、如果在存储控制器上轮换了CHAP密钥、而网络断开�
 
 
 
+[[install-the-iscsi-tools]]
 === 安装iSCSI工具
 
 使用适用于您的操作系统的命令安装iSCSI工具。

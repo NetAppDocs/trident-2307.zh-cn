@@ -16,6 +16,7 @@ summary: 使用此处提供的指针排除安装和使用 Astra Trident 时可�
 
 
 
+[[general-troubleshooting]]
 == 常规故障排除
 
 * 如果Trident Pod无法正常启动(例如、当Trident Pod卡在中时) `ContainerCreating` 阶段中的就绪容器少于两个)、正在运行 `kubectl -n trident describe deployment trident` 和 `kubectl -n trident describe pod trident-********-****` 可以提供更多见解。获取kubelet日志(例如、通过 `journalctl -xeu kubelet`)也很有用。
@@ -68,6 +69,7 @@ helm upgrade <name> trident-operator-21.07.1-custom.tgz --set tridentDebug=true`
 
 
 
+[[troubleshooting-an-unsuccessful-trident-deployment-using-the-operator]]
 == 使用操作员对未成功的 Trident 部署进行故障排除
 
 如果使用操作员部署Trident、则为的状态 `TridentOrchestrator` 更改自 `Installing` to `Installed`。如果您观察到 `Failed` 状态、并且操作员无法自行恢复、您应运行以下命令来检查操作员的日志：
@@ -143,6 +145,7 @@ trident-operator-766f7b8658-ldzsv   1/1     Running            0          8m17s
 
 
 
+[[troubleshooting-an-unsuccessful-trident-deployment-using-tridentctl]]
 == 使用对未成功的Trident部署进行故障排除 `tridentctl`
 
 为了帮助确定出现了什么问题、您可以使用重新运行安装程序 ``-d`` 参数、用于打开调试模式并帮助您了解问题所在：
@@ -165,6 +168,7 @@ INFO Trident uninstallation succeeded.
 ----
 
 
+[[completely-remove-astra-trident-and-crds]]
 == 完全删除Asta Trandent和CRD
 
 您可以完全删除Asta Dent以及所有创建的CRD和关联的自定义资源。

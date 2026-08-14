@@ -12,16 +12,17 @@ summary: 您可以使用操作员轻松升级现有的 Astra Trident 安装。
 
 
 [role="lead"]
-您可以使用三端操作员手动或使用Helm升级A作用 于三端的Astra。您可以从一个TRIdent操作员安装升级到另一个TRIdent操作员安装或从升级 `tridentctl` 安装到一个TRIdent操作员版本。请查看 link:upgrade-trident.html#select-an-upgrade-method["选择升级方法"] 升级三端修复程序安装之前。
+您可以使用 Trident 操作员手动或使用 Helm 升级 Astra Trident。您可以从 Trident 操作员安装升级到另一个 Trident 操作员安装，或从 `tridentctl`安装升级到 Trident 操作员版本。在升级 Trident 操作员安装之前，请查看link:upgrade-trident.html#step-3-select-an-upgrade-method["选择升级方法"]。
 
 
 
+[[upgrade-a-manual-installation]]
 == 升级手动安装
 
 您可以从集群范围的三端技术人员安装升级到另一个集群范围的三端技术人员安装。所有Astra Trident 21.01及更高版本均使用集群范围的运算符。
 
 
-NOTE: 要从使用命名空间范围的运算符(版本20.07到20.10)安装的Asta三端技术升级、请按照的升级说明进行操作 link:../earlier-versions.html["您安装的版本"] 的Astra三端。
+NOTE: 要从使用命名空间作用域运算符（版本 20.07 至 20.10）安装的 Astra Trident 进行升级，请使用已安装的 Astra Trident 版本的升级说明。
 
 .关于此任务
 ｛\f270通过｝｛\f270｛\f151、｝｛\f270｝｛\f270｝｛\f151、｝｛\f270｝｛\f270｝｛\f151、｝｛\f270通过｝｛\f151、｝｛\f270｝｛\f270｝｛\f151、｝｛\f270｝
@@ -58,6 +59,7 @@ kubectl create -f 23.07.1/trident-installer/deploy/<bundle.yaml> -n trident
 
 
 
+[[upgrade-a-helm-installation]]
 == 升级Helm安装
 
 您可以升级Asta三端Helm安装。
@@ -90,12 +92,13 @@ helm upgrade <name> trident-operator-23.07.1-custom.tgz --set tridentDebug=true
 
 
 
+[[upgrade-from-a-tridentctl-installation-to-trident-operator]]
 == 从升级 `tridentctl` 安装到TRIdent操作员
 
 您可以从升级到最新版本的Trident操作员 `tridentctl` 安装。现有后端和PVC将自动可用。
 
 
-NOTE: 在切换安装方法之前、请查看 link:../trident-get-started/kubernetes-deploy.html#moving-between-installation-methods["在安装方法之间移动"]
+NOTE: 在切换安装方法之前，请查看 link:../trident-install/kubernetes-deploy.html#moving-between-installation-methods["在安装方法之间移动"]
 
 .步骤
 . 下载最新的 Astra Trident 版本。

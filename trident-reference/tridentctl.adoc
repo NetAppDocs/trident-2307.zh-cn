@@ -16,6 +16,7 @@ summary: 了解有关 tridentctl 的更多信息， tridentctl 是一个命令�
 
 
 
+[[available-commands-and-options]]
 == 可用的命令和选项
 
 有关使用情况信息、请运行 `tridentctl --help`。
@@ -62,6 +63,7 @@ CAUTION: 可以将 Trident REST 接口配置为仅以 127.0.0.1 （对于 IPv4 �
 
 
 
+[[create]]
 == `create`
 
 您可以使用运行 `create` 用于向Astra Trident添加资源的命令。
@@ -76,6 +78,7 @@ Usage:
 
 
 
+[[delete]]
 == `delete`
 
 您可以运行 `delete` 用于从Astra Trident中删除一个或多个资源的命令。
@@ -95,6 +98,7 @@ Usage:
 
 
 
+[[get]]
 == `get`
 
 您可以运行 `get` 用于从Astra Trident获取一个或多个资源的命令。
@@ -119,6 +123,7 @@ Usage:
 
 
 
+[[images]]
 == `images`
 
 您可以运行 `images` 用于打印Astra Trident所需容器映像表的标志。
@@ -134,6 +139,7 @@ flags
 
 
 
+[[import-volume]]
 == `import volume`
 
 您可以运行 `import volume` 用于将现有卷导入到Astra Trident的命令。
@@ -155,6 +161,7 @@ flags
 
 
 
+[[install]]
 == `install`
 
 您可以运行 `install` 用于安装Astra Trident的标志。
@@ -187,6 +194,7 @@ flags
 
 
 
+[[logs]]
 == `logs`
 
 您可以运行 `logs` 用于从Astra Trident打印日志的标志。
@@ -208,6 +216,7 @@ flags
 
 
 
+[[send]]
 == `send`
 
 您可以运行 `send` 用于从Astra Trident发送资源的命令。
@@ -222,6 +231,7 @@ Usage:
 
 
 
+[[uninstall]]
 == `uninstall`
 
 您可以运行 `uninstall` 用于卸载Astra Trident的标志。
@@ -237,6 +247,7 @@ flags
 
 
 
+[[update]]
 == `update`
 
 您可以运行 `update` 用于在Astra Trident中修改资源的命令。
@@ -251,6 +262,7 @@ Usage:
 
 
 
+[[version]]
 == `version`
 
 您可以运行 `version` 用于打印版本的标志 `tridentctl` 以及正在运行的Trident服务。
